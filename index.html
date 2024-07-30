@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/image/icon.png" type="image/x-icon">
+    <title>หน้าหลัก</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background-image: url('/assets/image/background-main.png');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="title">
+                <a href="/">WinnyDeveloper</a>
+            </div>
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+                <li><a href="/user/"><i class="fa-solid fa-user"></i> แนะนำตัว</a></li>
+                <li><a href="/contact/"><i class="fa-solid fa-address-card"></i> ติดต่อ</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="hero">
+                <h1>ยินดีต้อนรับนะ ครับ/คะ</h1>
+            </div>
+        </header>
+        <div class="work-content">
+            <button class="work-item" onclick="location.href='/work/color'">
+                <p class="text">Code Color หรือ โค้ดสี</p>
+                <h3>มารู้จักกับโค้ดสีกัน</h3>
+            </button>
+            <button class="work-item" onclick="location.href='/work/text-color'">
+                <p class="text">เรื่องแรกที่สอน</p>
+                <h3>เปลี่ยนสีข้อความ</h3>
+            </button>
+            <button class="work-item" onclick="location.href='/work/text-color-background-color'">
+                <p class="text">เรื่องสองที่สอน</p>
+                <h3>เปลี่ยนสีข้อความพร้อมกับเปลี่ยนสีพื้นหลัง</h3>
+            </button>
+            <button class="work-item" onclick="location.href='/work/border-marquee'">
+                <p class="text">เรื่องสามที่สอน</p>
+                <h3>เพิ่มเส้นกรอบและข้อความเลื่อน</h3>
+            </button>
+            <button class="work-item" onclick="location.href='/work/table'">
+                <p class="text">เรื่องสี่ที่สอน</p>
+                <h3>ตาราง</h3>
+            </button>
+            <button class="work-item" onclick="location.href='/work/table-img'">
+                <p class="text">เรื่องห้าที่สอน</p>
+                <h3>ตารางพร้อมมีรูปตาราง ปล. ไม่มีโค้ดให้ดู</h3>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 WinnyDeveloper. All rights reserved.</p>
+            <p>Website designed by <a href="https://web.facebook.com/profile.php?id=100088587627908">WinnyDeveloper</a></p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

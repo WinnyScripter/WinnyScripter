@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/image/icon.png" type="image/x-icon">
+    <title>Text and Background Color</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background-image: url('/assets/image/background-code.png');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: 'Itim', sans-serif;
+        }
+        table {
+            width: auto;
+            border-collapse: collapse;
+            font-size: 24px;
+            text-align: center;
+            margin: auto;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .color-sample {
+            font-size: 24px;
+            padding: 12px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="title">
+                <a href="/">WinnyDeveloper</a>
+            </div>
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-house"></i> หน้าหลัก</a></li>
+                <li><a href="/user/"><i class="fa-solid fa-user"></i> แนะนำตัว</a></li>
+                <li><a href="/contact/"><i class="fa-solid fa-address-card"></i> ติดต่อ</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="hero">
+                <h1>เรื่องสองที่สอน</h1>
+                <p>เปลี่ยนสีข้อความกับเปลี่ยนสีพื้นหลัง</p>
+            </div>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>สี</th>
+                    <th>โค้ดสี</th>
+                    <th>โค้ดข้อความ</th>
+                    <th>แสดงผล</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ดำ กับ ขาว</td>
+                    <td>#000 หรือ black กับ #fff หรือ white</td>
+                    <td>&lt;h1 style="color: #fff; background-color: #000;"&gt;ข้อความ&lt;/h1&gt;</td>
+                    <td><span class="color-sample" style="color: white; background-color: black;">ข้อความ</span></td>
+                </tr>
+                <tr>
+                    <td>ขาว กับ ดำ</td>
+                    <td>#fff หรือ white กับ #000 หรือ black</td>
+                    <td>&lt;h1 style="color: #000; background-color: #fff;"&gt;ข้อความ&lt;/h1&gt;</td>
+                    <td><span class="color-sample" style="color: black; background-color: white;">ข้อความ</span></td>
+                </tr>
+                <tr>
+                    <td>แดง กับ ขาว</td>
+                    <td>#f00 หรือ red กับ #fff หรือ white</td>
+                    <td>&lt;h1 style="color: #fff; background-color: #f00;"&gt;ข้อความ&lt;/h1&gt;</td>
+                    <td><span class="color-sample" style="color: white; background-color: red;">ข้อความ</span></td>
+                </tr>
+                <tr>
+                    <td>เขียว กับ ขาว</td>
+                    <td>#0f0 หรือ green กับ #fff หรือ white</td>
+                    <td>&lt;h1 style="color: #fff; background-color: #0f0;"&gt;ข้อความ&lt;/h1&gt;</td>
+                    <td><span class="color-sample" style="color: white; background-color: #0f0;">ข้อความ</span></td>
+                </tr>
+                <tr>
+                    <td>น้ำเงิน กับ ขาว</td>
+                    <td>#00f หรือ blue กับ #fff หรือ white</td>
+                    <td>&lt;h1 style="color: #fff; background-color: #00f;"&gt;ข้อความ&lt;/h1&gt;</td>
+                    <td><span class="color-sample" style="color: white; background-color: #00f;">ข้อความ</span></td>
+                </tr>
+                <tr>
+                    <td>เหลือง กับ ดำ</td>
+                    <td>#ff0 หรือ yellow กับ #000 หรือ black</td>
+                    <td>&lt;h1 style="color: #000; background-color: #ff0;"&gt;ข้อความ&lt;/h1&gt;</td>
+                    <td><span class="color-sample" style="color: black; background-color: #ff0;">ข้อความ</span></td>
+                </tr>
+                <tr>
+                    <td>ฟ้า กับ ดำ</td>
+                    <td>#0ff หรือ aqua กับ #000 หรือ black</td>
+                    <td>&lt;h1 style="color: #000; background-color: #0ff;"&gt;ข้อความ&lt;/h1&gt;</td>
+                    <td><span class="color-sample" style="color: black; background-color: #0ff;">ข้อความ</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 WinnyDeveloper. All rights reserved.</p>
+            <p>Website designed by <a href="https://web.facebook.com/profile.php?id=100088587627908">WinnyDeveloper</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
