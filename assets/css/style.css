@@ -270,26 +270,3 @@ footer {
 .footer-content a:hover {
     text-decoration: underline;
 }
-
-/* Next Button Styles */
-.next {
-    display: flex;
-    justify-content: flex-end;
-    width: 1300px;
-}
-
-#nextclass {
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-#nextclass:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    transform: scale(1.05);
-}
